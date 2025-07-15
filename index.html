@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-purple-50 to-pink-50 text-gray-900 font-[Inter]">
+
+  <!-- Navbar -->
+  <nav class="bg-white/80 backdrop-blur shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Nitin's Portfolio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-purple-600 font-semibold">Home</a></li>
+        <li><a href="#about" class="hover:text-purple-600 font-semibold">About</a></li>
+        <li><a href="#projects" class="hover:text-purple-600 font-semibold">Projects</a></li>
+        <li><a href="#contact" class="hover:text-purple-600 font-semibold">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4 pt-24">
+    <img src="images/profile.jpg" alt="Nitin Singh" class="rounded-full border-4 border-purple-400 shadow-lg w-36 h-36 mb-4 object-cover object-center">
+    <h2 class="text-4xl font-bold text-purple-700 mb-2">Nitin Singh</h2>
+    <p class="text-xl font-medium mb-2">Aspiring Web Developer</p>
+    <p class="italic text-md text-pink-500 mb-4">"Code. Create. Conquer."</p>
+    <a href="#" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full shadow hover:scale-105 transition">Download Resume</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-purple-600 mb-6">About Me</h2>
+      <p class="mb-4 text-gray-700">I am a B.Tech Computer Science student passionate about web development and design. I enjoy learning new technologies and building user-friendly web experiences.</p>
+      <p class="mb-6 text-gray-700">My goal is to become a full-stack developer with strong skills in frontend and backend tools.</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-blue-100 rounded-lg p-4 shadow">
+          <h3 class="text-lg font-semibold mb-2 text-blue-700">Key Skills</h3>
+          <ul class="list-disc list-inside text-left">
+            <li>HTML</li>
+            <li>Tailwind CSS</li>
+            <li>JavaScript (Basic)</li>
+          </ul>
+        </div>
+        <div class="bg-pink-100 rounded-lg p-4 shadow">
+          <h3 class="text-lg font-semibold mb-2 text-pink-700">Education</h3>
+          <ul class="text-left">
+            <li>GLA University (2024–2028)</li>
+            <li>Specialization: DevOps & Cloud</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-purple-600 mb-6">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transition hover:scale-105">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" class="mb-4 rounded">
+          <h3 class="font-semibold text-blue-700">Project One</h3>
+          <p class="text-sm mb-2">A simple web app using HTML and Tailwind.</p>
+          <a href="#" class="text-purple-600 text-sm hover:underline">GitHub Link</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transition hover:scale-105">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" class="mb-4 rounded">
+          <h3 class="font-semibold text-blue-700">Project Two</h3>
+          <p class="text-sm mb-2">Portfolio template design using responsive layout.</p>
+          <a href="#" class="text-purple-600 text-sm hover:underline">GitHub Link</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-xl transition hover:scale-105">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3" class="mb-4 rounded">
+          <h3 class="font-semibold text-blue-700">Project Three</h3>
+          <p class="text-sm mb-2">Landing page with animated sections.</p>
+          <a href="#" class="text-purple-600 text-sm hover:underline">GitHub Link</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-purple-50 py-16 px-4">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-purple-700 mb-6">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
+        <textarea placeholder="Message" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400" rows="5"></textarea>
+        <button type="submit" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full hover:scale-105 transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-4 border-t mt-8">
+    <p class="text-sm text-gray-600">&copy; 2025 Nitin Singh. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
